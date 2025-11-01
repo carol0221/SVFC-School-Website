@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="top-nav">
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="svfc-history.html">SVFC HISTORY</a></li>
+                <li><a href="phisophy-vision-mission.html">PHILOSOPHY, MISSION, and VISION</a></li>
+                <li><a href="">SVFC HYMN</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">PORTAL</a></li>
+                <li><a href="#" id="loginLink">LOGIN</a></li>
+               </ul>
+            </nav>
+
+            <nav class="bottom-nav">
+                <ul class="left-nav-menu">
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="">COLLEGE SEAL</a></li>
+                    <li><a href="registrar.html">REGISTRAR</a></li>
+                </ul>
+
+                <div class="logo">
+                    <img src="images/bg_with_logo.png" alt="school logo">
+                </div>
+
+                <ul class="right-nav-menu">
+                    <li><a href="">FACILITIES</a></li>       
+                    <li><a href="">GOALS & OBJECTIVE</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="top">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="svfc-history.html">SVFC HISTORY</a></li>
+                    <li><a href="">SVFC HYMN</a></li>
+                    <li><a href="phisophy-vision-mission.html">PHILOSOPHY, MISSION, and VISION</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">PORTAL</a></li>
+                    <li> <a href="#" id="loginLinkMobile">LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <nav class="bottom">
+                <ul>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="">COLLEGE SEAL</a></li>
+                    <li><a href="registrar.html">REGISTRAR</a></li>
+                    <li><a href="">FACILITIES</a></li>       
+                    <li><a href="">GOALS & OBJECTIVE</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--CAROUSEL-->
+        <section class="carousel-container">
+            <div id="carousel" class="carousel-slides">
+                
+                <!--Slide 1-->
+                <div class="carousel-slide">
+                    <img src="images/image slides 1.png" alt="slide 1">
+                    
+                    <div class="carousel-text">
+                        <h1>St. Vincent de Ferrer College of Camarin, Inc</h1>
+                        <p>The Home of Quality and Innovative Education</p>
+                        <a href="" class="get-started-button">Get Started</a>
+                        <!--<button class="get-started-button ">Get Started</button>-->
+                    </div>
+                </div>
+                
+                <!--Slide 2-->
+                <div class="carousel-slide">
+                    <img src="images/image slides 2.png" alt="slide 2">
+                    
+                    <div class="carousel-text">
+                        <h1>St. Vincent de Ferrer College of Camarin, Inc</h1>
+                        <p>The Home of Quality and Innovative Education</p>
+                        <a href="" class="get-started-button">Get Started</a>
+                    </div>
+                </div> 
+                
+                <!--Slide 3-->
+                <div class="carousel-slide">
+                    <img src="images/image slides 3.png" alt="slide 3">
+                    
+                    <div class="carousel-text">
+                        <h1>St. Vincent de Ferrer College of Camarin, Inc</h1>
+                        <p>The Home of Quality and Innovative Education</p>
+                        <a href="" class="get-started-button">Get Started</a>
+                        
+                    </div>
+                </div>
+                
+                <!--Slide 4-->
+                <div class="carousel-slide">
+                    <img src="images/image slide 4.png" alt="slide 4">
+                    
+                    <div class="carousel-text">
+                        <h1>St. Vincent de Ferrer College of Camarin, Inc</h1>
+                        <p>The Home of Quality and Innovative Education</p>
+                        <a href="" class="get-started-button">Get Started</a>
+                    </div>
+                </div>
+            </div>
+            
+            <button onclick="moveSlide(-1)" class="carousel-nav-left">&#10094;</button>
+            <button onclick="moveSlide(1)" class="carousel-nav-right">&#10095;</button>
+            
+            <div class="carousel-indicators">
+                <span onclick="goToSlide(0)" class="indicator"></span>
+                <span onclick="goToSlide(1)" class="indicator"></span>
+                <span onclick="goToSlide(2)" class="indicator"></span>
+                <span onclick="goToSlide(3)" class="indicator"></span>
+            </div>
+        </section>  
+        <section class="objectives-container">
+            <div class="objectives-content">
+                <h1>St. Vincent de Ferrer College History</h1>
+                <p>St. Vincent de Ferrer College of Camarin, Inc., is a private educational institution managed by a dedicated family of educators.</p>
+                
+                <div class="image-container">
+                    <img src="images/bg_with_logo.png">
+                    <div class="image-description">
+                        <h2>St. Vincent de Ferrer College of Camarin, Inc. objectives are as follows:</h2>
+                        <ol>
+                            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit</li>
+                            <li>Consectetur adipiscing elit quisque faucibus ex sapien vitae.</li>
+                            <li>Ex sapien vitae pellentesque sem placerat in id.</li>
+                            <li>Placerat in id cursus mi pretium tellus duis. Pretium tellus duis convallis tempus leo eu aenean.</li>
+                        </ol>
+                        <a href="svfc-history.html" class="read-more-btn">Read More</a>
+                    </div>
+               </div>
+            </div>
+        </section>
+
+        <section class="philosophy-vision-mission-section">
+            <div class="container">
+                <div class="container-card">
+                    <div class="icon"><i class="fas fa-book-open"></i></div>
+                    <h3>Our Philosophy</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                        In id cursus mi pretium tellus duis convallis... </p>.
+                        <a href="phisophy-vision-mission.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="container-card">
+                    <div class="icon"><i class="fas fa-lightbulb"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                        In id cursus mi pretium tellus duis convallis... </p>.
+                        <a href="phisophy-vision-mission.html" class="read-more">Read More</a>
+                </div>
+
+                <div class="container-card">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. 
+                        Quisque faucibus ex sapien vitae pellentesque sem placerat. 
+                        In id cursus mi pretium tellus duis convallis... </p>.
+                        <a href="phisophy-vision-mission.html" class="read-more">Read More</a>
+                </div> 
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h1 class="section-title">College Courses Offered</h1>
+
+            <div class="institute">
+                <h2>Institute of Education</h2>
+                <div class="course-container">
+                    <div class="course-card">
+                        <div class="course-icon"><i class="fas fa-pen"></i></div>
+                        <h4>BSED English</h4>
+                        <p>Bachelor of Secondary Education major in English</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon"><i class="fas fa-flag"></i></div>
+                        <h4>BSED Filipino</h4>
+                        <p>Bachelor of Secondary Education major in Filipino</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon"><i class="fas fa-globe"></i></div>
+                        <h4>BSED Social Studies</h4>
+                        <p>Bachelor of Secondary Education major in Social Studies</p>
+                    </div>
+                    
+                    <div class="course-card">
+                        <div class="course-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <h4>BEED GenEd</h4>
+                        <p>Bachelor of Elementary Education major in General Education</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="institute">
+                <h2>Institute of Information Technology</h2>
+                <div class="course-container">
+                    <div class="course-card">
+                        <div class="course-icon"><i class="fas fa-laptop"></i></div>
+                        <h4>BSIT</h4>
+                        <p>Bachelor of Science in Information Technology</p>
+                    </div>
+                </div>
+           </div>
+           
+           <div class="institute">
+               <h2>Institute of Hospitality Management and Tourism</h2>
+                <div class="course-container">
+                   <div class="course-card">
+                      <div class="course-icon"><i class="fas fa-hotel"></i></div>
+                      <h4>BSHM</h4>
+                      <p>Bachelor of Science in Hospitality Management</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="institute">
+                <h2>Institute of Business Administration and Accountacy</h2>
+                <div class="course-container">
+                    <div class="course-card">
+                        <div class="course-icon"><i class="fa-solid fa-briefcase"></i></div>
+                        <h4>BSA</h4>
+                        <p>Bachelor of Science in Accountancy</p>
+                    </div>
+                </div>
+           </div>
+        </section>
+
+        <section class="club-section">
+            <h1>CLUBS</h1>
+            <div class="club-container">
+            <div class="club-card">
+                <div class="club-icon"><i class="fa-solid fa-trophy"></i></div>
+                <h3>Varsity</h3>
+                <ul>
+                    <li>Badminton - Table Tennis</li>
+                    <li>Basketball - Chess</li>
+                    <li>Volleyball</li>
+                </ul>
+            </div>
+
+            <div class="club-card">
+                <div class="club-icon"><i class="fa-solid fa-palette"></i></div>
+                <h3>Languages / Art</h3>
+                <ul>
+                    <li>Journalism & Broadcasting</li>
+                    <li>Commercial Painting Club</li>
+                    <li>French - Korean - Nihongo</li>
+                </ul>
+            </div>
+
+            <div class="club-card">
+                <div class="club-icon"><i class="fa-solid fa-music"></i></i></div>
+                <h3>CESCA</h3>
+                <ul>
+                    <li>Single Voice Club</li>
+                    <li>Himig Musika Chorale</li>
+                    <li>Cultural & Modern Dance Troupe</li>
+                </ul>
+            </div>
+
+            <div class="club-card">
+                <div class="club-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                <h3>Special Skills</h3>
+                <ul>
+                    <li>Handicraft</li>
+                    <li>Sewing Club</li>
+                </ul>
+            </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <span class="title-footer"><h3>St. Vincent de Ferrer College of Camarin, Inc</h3></span>
+                    <p>SVFC Compound, <br>
+                        San Vicente Ferrer Road,<br>
+                        Area D, Brgy. 178,<br>
+                        Camarin, Caloocan City</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Admission Numbers</h3>
+                    <p>SMART 0922-333-444<br>
+                        SMART 0922-333-444</p>
+                </div>
+                    
+                <div class="footer-section">
+                    <h3>Follow Us:</h3>
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+                <p>&copy 2025 Carol Engo. All  Rights Reserved</p>
+        </footer>
+        
+        <!--LOGIN-->
+        <div class="overlay" id="loginModal">
+            <div class="login-modal">
+                <div class="modal-header">
+                    <h2>Login</h2>
+                    <button onclick="closeModal()">×</button>
+                </div>
+                
+                <div class="modal-body">
+                    <label for="userName">Username</label>
+                    <input type="text" id="username" placeholder="Username" />
+                </div>
+                
+                <div class="modal-body">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" maxlength="8" />
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-close" onclick="closeModal()">Close</button>
+                    <button class="btn btn-login" onclick="validateLogin()">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            //HAMBURGER MENU
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            
+            hamburger.addEventListener("click", () => {
+                mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+            });
+            
+            // CAROUSEL  SLIDE
+           let currentIndex = 0;  // Initialize the current slide index
+           const slideInterval = 4000; // 4 seconds interval for auto-play
+        
+          // Function to move to the next or previous slide
+          function moveSlide(direction) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            currentIndex += direction;
+            
+            if (currentIndex < 0) { // Loop back to the last slide
+                currentIndex = slides.length - 1; 
+            } else if (currentIndex >= slides.length) {
+                currentIndex = 0; // Loop back to the first slide
+            }
+            
+            // Move the carousel to the correct position
+            document.getElementById('carousel').style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            // Update the circular indicators
+            updateIndicators();
+          }
+          
+          // Function to go directly to a specific slide by index
+          function goToSlide(index) {
+            const slides = document.querySelectorAll('.carousel-slide');
+            currentIndex = index;
+            
+            // Move the carousel to the correct position
+            document.getElementById('carousel').style.transform = `translateX(-${currentIndex * 100}%)`;
+            
+            
+            // Update the circular indicators
+            updateIndicators();
+           }
+           
+           // Function to update the circular indicators based on the current slide
+           function updateIndicators() {
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.style.backgroundColor = (index === currentIndex) ? '#d4af37' : '#fff';
+            });
+           }
+           
+           // Auto-play function
+           function autoPlay() {
+            setInterval(() => {
+                moveSlide(1); // Move to the next slide
+            }, slideInterval);
+           }
+           
+           //LOGIN
+           const modal = document.getElementById('loginModal');
+           const loginLink = document.getElementById('loginLink');
+           const loginLinkMobile = document.getElementById('loginLinkMobile');
+           
+           // Open modal
+           loginLink.onclick = (e) => { 
+            e.preventDefault(); 
+            modal.style.display = 'flex'; 
+           }
+           
+           loginLinkMobile.onclick = (e) => { 
+            e.preventDefault(); 
+            modal.style.display = 'flex'; 
+           }
+           
+           // Close modal
+           function closeModal() {
+            modal.style.display = 'none';
+           }
+           
+           // Close when clicking outside the modal
+           window.onclick = (e) => {
+            if (e.target === modal) closeModal();
+           }
+           
+           // Validate Login Function
+           function validateLogin() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            
+            if (username === "" && password === "") {
+                alert("Please enter both username and password.");
+        
+            } else if (username === "") {
+                 alert("Please enter your username.");
+        
+            } else if (password === "") {
+                alert("Please enter your password.");
+        
+            } else if (password.length < 8) {
+                 alert("Password must be at least 8 characters long.");
+            
+            } else {
+                alert("Login successful!");
+                closeModal();
+            }
+            }
+        </script>
+    </body>
+</html>

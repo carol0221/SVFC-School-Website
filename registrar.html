@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registrar Page</title>
+        <link rel="stylesheet" href="registrar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav class="top-nav">
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="svfc-history.html">SVFC HISTORY</a></li>
+                <li><a href="phisophy-vision-mission.html">PHILOSOPHY, MISSION, and VISION</a></li>
+                <li><a href="">SVFC HYMN</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">PORTAL</a></li>
+                <li> <a href="#" id="loginLinkMobile">LOGIN</a></li>
+               </ul>
+            </nav>
+
+            <nav class="bottom-nav">
+                <ul class="left-nav-menu">
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="">COLLEGE SEAL</a></li>
+                    <li><a href="registrar.html">REGISTRAR</a></li>
+                </ul>
+
+                <div class="logo">
+                    <img src="images/bg_with_logo.png" alt="school logo">
+                </div>
+
+                <ul class="right-nav-menu">
+                    <li><a href="">FACILITIES</a></li>       
+                    <li><a href="">GOALS & OBJECTIVE</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="top">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="svfc-history.html">SVFC HISTORY</a></li>
+                    <li><a href="">SVFC HYMN</a></li>
+                    <li><a href="phisophy-vision-mission.html">PHILOSOPHY, MISSION, and VISION</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">PORTAL</a></li>
+                    <li><a href="#" id="loginLink">LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <nav class="bottom">
+                <ul>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="">COLLEGE SEAL</a></li>
+                    <li><a href="registrar.html">REGISTRAR</a></li>
+                    <li><a href="">FACILITIES</a></li>       
+                    <li><a href="">GOALS & OBJECTIVE</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <main>
+            <div class="main-content">
+                <section class="registrar">
+                    <div class="registrar-content">
+                        <h1>REGISTRAR</h1>
+                        <h2>About Registrar Office</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        <br>
+                        <br>
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </section>
+
+                <section class="announcements">
+                    <h1>Announcement</h1>
+                    <div class="announcement-card">
+                        <div class="card" onclick="openLightbox('ann1')">
+                            <img src="images/registrar img/announcement 1.webp" alt="announcement 1">
+                            <div class="card-text">For New Enrollees, Transferees, and Returnees</div>
+                        </div>
+
+                        <div class="card" onclick="openLightbox('ann2')">
+                            <img src="images/registrar img/announcement 2.webp" alt="announcement 2">
+                             <div class="card-text">Initial Enrollment Process</div>
+                        </div>
+
+                        <div class="card" onclick="openLightbox('ann3')">
+                            <img src="images/registrar img/announcement 3.jpg" alt="announcement 3">
+                             <div class="card-text">SVFC Hiring</div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="faq">
+                    <h1>Frequently Asked Questions</h1>
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFAQ(this)">Who can request a Certificate of Enrollment for a student?</div>
+                        <div class="faq-answer">
+                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">I lost my diploma/report card. Can I request for a new copy?</div>
+                         <div class="faq-answer">
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>
+                        </div>
+                    </div>
+
+                      <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">How do I report the correction of my name?</div>
+                         <div class="faq-answer">
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>
+                        </div>
+                    </div>
+
+                      <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">Where can I find my Learner Reference Number (LRN)?</div>
+                         <div class="faq-answer">
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. </p>
+                        </div>
+                    </div>
+
+                      <div class="faq-item">
+                            <div class="faq-question" onclick="toggleFAQ(this)">Can my school records be sent online?</div>
+                         <div class="faq-answer">
+                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. </p>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="org-name">
+                        <h1>Meet the Team</h1>
+                        <ul>
+                     <li class="top-box">
+                        <div class="box">
+                           <img src="images/registrar img/img.jpg" alt="Registrar" class="profile-pic">
+                          <p><strong>Nievo, Cristy</strong><br>Registrar</p>
+                        </div>
+                     </li>
+                   </ul>
+
+                   <ul class="lower-box-container">
+                       <li class="lower-box">
+                          <div class="box">
+                           <img src="images/registrar img/img.jpg" alt="Registrar" class="profile-pic">
+                           <p><strong>Cereno, Angela</strong><br>Registrar</p>
+                         </div>
+                        </li>
+
+                       <li class="lower-box">
+                          <div class="box">
+                             <img src="images/registrar img/img.jpg" alt="Registrar" class="profile-pic">
+                             <p><strong>Masujer, Bea</strong><br>Registrar</p>
+                            </div>
+                        </li>
+                     
+                         <li class="lower-box">
+                             <div class="box">
+                               <img src="images/registrar img/img.jpg" alt="Registrar" class="profile-pic">
+                               <p><strong>Reazon, Jane</strong><br>Finance</p>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                 <aside class="sidebar">
+                    <h2>Quick Links</h2>
+                    <p>End of School Year Rites (2024-2025)</p>
+                    <div class="sidebar-cards">
+                        <div class="sidebar-card" onclick="openImageLightbox('side1')">
+                            <img src="images/registrar img/sidebar 1.jpg" alt="sidebar image">
+                        </div>
+
+                        <div class="sidebar-card" onclick="openImageLightbox('side2')">
+                          <img src="images/registrar img/sidebar 2.jpg" alt="Sidebar Image 2">
+                        </div>
+                    </div>
+                    <p><span class="label">Business Hours:</span> <br>
+                        Mondays-Fridays 7:30AM - 5:00PM <br>
+                        email: registrar@svfc.edu.ph <br>
+                        Tel number: 899-10-100, 899-10-110</p>
+                </aside>
+            </div>
+        </main>
+
+        <div id="annLightbox" class="lightbox" onclick="closeLightbox(event)">
+            <div class="lightbox-content ann-box" onclick="event.stopPropagation()">
+                <span class="close ann-close" onclick="closeLightbox()">&times;</span>
+                <div id="annTopImg" class="ann-top-img"></div>
+                <div id="annImages" class="ann-images"></div>
+                <div id="Text" class="lightbox-text"></div>
+            </div>
+        </div>
+
+        <div id="sideLightbox" class="lightbox" onclick="closeImageLightbox(event)">
+            <div class="lightbox-content sidebox" onclick="event.stopPropagation()">
+                <span class="close side-close" onclick="closeImageLightbox()">&times;</span>
+                <img id="sideImg" src="" alt="Sidebar Image" />
+            </div>
+        </div>
+
+         <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <span class="title-footer"><h3>St. Vincent de Ferrer College of Camarin, Inc</h3></span>
+                    <p>SVFC Compound, <br>
+                        San Vicente Ferrer Road,<br>
+                        Area D, Brgy. 178,<br>
+                        Camarin, Caloocan City</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Admission Numbers</h3>
+                    <p>SMART 0922-333-444<br>
+                        SMART 0922-333-444</p>
+                </div>
+                    
+                <div class="footer-section">
+                    <h3>Follow Us:</h3>
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+                <p>&copy 2025 Carol Engo. All  Rights Reserved</p>
+        </footer>
+
+         <!--LOGIN-->
+        <div class="overlay" id="loginModal">
+            <div class="login-modal">
+                <div class="modal-header">
+                    <h2>Login</h2>
+                    <button onclick="closeModal()">×</button>
+                </div>
+                
+                <div class="modal-body">
+                    <label for="userName">Username</label>
+                    <input type="text" id="username" placeholder="Username" />
+                </div>
+                
+                <div class="modal-body">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" maxlength="8" />
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-close" onclick="closeModal()">Close</button>
+                    <button class="btn btn-login" onclick="validateLogin()">Login</button>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            //HAMBURGER MENU
+            const hamburger = document.getElementById("hamburger");
+            const mobileMenu = document.getElementById("mobileMenu");
+            
+            hamburger.addEventListener("click", () => {
+                mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+            });
+            
+            //LIGHTBOX
+            function openLightbox(id) {
+                const lightbox = document.getElementById("annLightbox");
+                const annTopImg = document.getElementById("annTopImg");
+                const annImages = document.getElementById("annImages");
+                const text = document.getElementById("Text");
+                
+                annTopImg.innerHTML = "";
+                annImages.innerHTML = "";
+                text.textContent = "";
+                
+                if (id === "ann1") {
+                    annTopImg.innerHTML = `
+                    <img src="images/registrar img/announcement 1.webp" alt="Announcement 1">
+                    `;
+                    text.innerHTML = `
+                    <p><b>Enrollment Requirements for NEW Students (2025-2026)</b></p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.<br>
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. </p>
+                   `;
+                }
+                
+                else if (id === "ann2") {
+                    annTopImg.innerHTML = `
+                    <img src="images/registrar img/announcement 2.webp" alt="Announcement 2">
+                    `;
+                    text.innerHTML = `
+                    <p><b>Old Students Enrollment Process 2025-2026</b></p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.<br>
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. </p>
+                    `;
+                }
+                
+                else if (id === "ann3") {
+                    annTopImg.innerHTML = `
+                    <h2 class="ann-text"><b>ANNOUNCEMENT</b></h2><br>
+                    <img src="images/registrar img/announcement 3.jpg" alt="Announcement 3">
+                    `;
+                    
+                    annImages.innerHTML = `
+                    <p class="ann-text"><b></b></p><br>
+                    <img src="images/registrar img/svfc hiring 1.webp" style="width: 100%; max-width: 280px; height: auto;" onclick="openSVFCImageLightbox('images/registrar img/svfc hiring 1.webp')">
+                    <img src="images/registrar img/svfc hiring 2.jpg"  style="width: 100%; max-width: 200px; height: auto;"  onclick="openSVFCImageLightbox('images/registrar img/svfc hiring 2.jpg')">
+                    <img src="images/registrar img/svfc hiring 3.webp" style="width: 100%; max-width: 280px; height: auto;" onclick="openSVFCImageLightbox('images/registrar img/svfc hiring 3.webp')">
+                    `;
+                    
+                    text.innerHTML = `
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.<br>
+                    In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. </p>
+                    `;
+                }
+                
+                lightbox.style.display = "flex";
+            }
+
+            // CLOSE ANNOUNCEMENT LIGHTBOX
+            function closeLightbox() {
+                document.getElementById("annLightbox").style.display = "none";
+            }
+
+            // OPEN SIDEBAR LIGHTBOX
+            function openImageLightbox(id) {
+                const lightbox = document.getElementById("sideLightbox");
+                const img = document.getElementById("sideImg");
+                
+                if (id === "side1") img.src = "images/registrar img/sidebar 1.jpg";
+                else if (id === "side2") img.src = "images/registrar img/sidebar 2.jpg";
+                
+                lightbox.style.display = "flex";
+            }
+
+            // OPEN SVFC IMAGES(3rd announcement)
+            function openSVFCImageLightbox(imageSrc) {
+                const lightbox = document.getElementById("sideLightbox");
+                const img = document.getElementById("sideImg");
+                
+                img.src = imageSrc;
+                lightbox.style.display = "flex";
+            }
+
+            // CLOSE SIDEBAR LIGHTBOX
+            function closeImageLightbox() {
+                document.getElementById("sideLightbox").style.display = "none";
+            }
+
+            /* FAQ ACCORDION*/
+            function toggleFAQ(element) {
+                const parent = element.parentElement;
+                const all = document.querySelectorAll(".faq-item");
+                all.forEach(item => {
+                    if (item !== parent) item.classList.remove("active");
+                });
+                parent.classList.toggle("active");
+            }
+
+           //LOGIN
+           const modal = document.getElementById('loginModal');
+           const loginLink = document.getElementById('loginLink');
+           const loginLinkMobile = document.getElementById('loginLinkMobile');
+           
+           // Open modal
+           loginLink.onclick = (e) => { 
+            e.preventDefault(); 
+            modal.style.display = 'flex'; 
+           }
+           
+           loginLinkMobile.onclick = (e) => { 
+            e.preventDefault(); 
+            modal.style.display = 'flex'; 
+           }
+           
+           // Close modal
+           function closeModal() {
+            modal.style.display = 'none';
+           }
+           
+           // Close when clicking outside the modal
+           window.onclick = (e) => {
+            if (e.target === modal) closeModal();
+           }
+           
+           // Validate Login Function
+           function validateLogin() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            
+            if (username === "" && password === "") {
+                alert("Please enter both username and password.");
+        
+            } else if (username === "") {
+                 alert("Please enter your username.");
+        
+            } else if (password === "") {
+                alert("Please enter your password.");
+        
+            } else if (password.length < 8) {
+                 alert("Password must be at least 8 characters long.");
+            
+            } else {
+                alert("Login successful!");
+                closeModal();
+            }
+            }
+        </script>
+    </body>
+</html>

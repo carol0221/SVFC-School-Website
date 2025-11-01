@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JOBS Page</title>
+        <link rel="stylesheet" href="jobs.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+      </head>
+  <body> 
+        <header>
+            <nav class="top-nav">
+               <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="svfc-history.html">SVFC HISTORY</a></li>
+                <li><a href="phisophy-vision-mission.html">PHILOSOPHY, MISSION, and VISION</a></li>
+                <li><a href="">SVFC HYMN</a></li>
+                <li><a href="">CONTACT US</a></li>
+                <li><a href="">PORTAL</a></li>
+                <li><a href="#" id="loginLink">LOGIN</a></li>
+               </ul>
+            </nav>
+
+            <nav class="bottom-nav">
+                <ul class="left-nav-menu">
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="">COLLEGE SEAL</a></li>
+                    <li><a href="registrar.html">REGISTRAR</a></li>
+                </ul>
+
+                <div class="logo">
+                    <img src="images/bg_with_logo.png" alt="school logo">
+                </div>
+
+                <ul class="right-nav-menu">
+                    <li><a href="">FACILITIES</a></li>       
+                    <li><a href="">GOALS & OBJECTIVE</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                </ul>
+            </nav>
+
+            <div class="hamburger" id="hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <nav class="top">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="svfc-history.html">SVFC HISTORY</a></li>
+                    <li><a href="">SVFC HYMN</a></li>
+                    <li><a href="phisophy-vision-mission.html">PHILOSOPHY, MISSION, and VISION</a></li>
+                    <li><a href="">CONTACT US</a></li>
+                    <li><a href="">PORTAL</a></li>
+                   <li><a href="#" id="loginLinkMobile">LOGIN</a></li>
+                </ul>
+            </nav>
+
+            <nav class="bottom">
+                <ul>
+                    <li><a href="admission.html">ADMISSION</a></li>
+                    <li><a href="">COLLEGE SEAL</a></li>
+                    <li><a href="registrar.html">REGISTRAR</a></li>
+                    <li><a href="">FACILITIES</a></li>       
+                    <li><a href="">GOALS & OBJECTIVE</a></li>
+                    <li><a href="jobs.html">JOBS</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <section class="jobs-section">
+          <div class="jobs-content">
+            <h1>JOBS</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          </div>
+        </section>
+
+        <section class="jobs-list">
+          <div class="jobs-list-container">
+            <h1>Available Positions</h1>
+            <div class="job-card" data-job="teacher" role="listitem" tabindex="0">
+              <h3>Alternative Learning Support Teacher</h3>
+              <div class="job-meta">Full-time • Makati Campus</div>
+              <div class="job-preview">
+                We are looking for an innovative and passionate teacher...
+              </div>
+            </div>
+            
+            <div class="job-card" data-job="marketing" role="listitem" tabindex="0">
+              <h3>Marketing Specialist</h3>
+              <div class="job-meta">Full-time • Makati Campus</div>
+              <div class="job-preview">
+                CSA Makati seeks a creative Marketing Specialist...
+              </div>
+            </div>
+          </div>
+       </section>
+       
+        <!-- LIGHTBOX -->
+       <div id="lightbox" class="lightbox" aria-hidden="true">
+            <button class="close-btn" id="closeBtn" aria-label="Close">X</button>
+            <div id="lightbox-content" class="lightbox-content"></div>
+        </div>
+
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section">
+                    <span class="title-footer"><h3>St. Vincent de Ferrer College of Camarin, Inc</h3></span>
+                    <p>SVFC Compound, <br>
+                        San Vicente Ferrer Road,<br>
+                        Area D, Brgy. 178,<br>
+                        Camarin, Caloocan City</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Admission Numbers</h3>
+                    <p>SMART 0922-333-444<br>
+                        SMART 0922-333-444</p>
+                </div>
+                    
+                <div class="footer-section">
+                    <h3>Follow Us:</h3>
+                    <div class="social-links">
+                        <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+                <p>&copy 2025 Carol Engo. All  Rights Reserved</p>
+        </footer>
+
+       <!--LOGIN-->
+        <div class="overlay" id="loginModal">
+            <div class="login-modal">
+                <div class="modal-header">
+                    <h2>Login</h2>
+                    <button onclick="closeModal()">×</button>
+                </div>
+                
+                <div class="modal-body">
+                    <label for="userName">Username</label>
+                    <input type="text" id="username" placeholder="Username" />
+                </div>
+                
+                <div class="modal-body">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Password" maxlength="8" />
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-close" onclick="closeModal()">Close</button>
+                    <button class="btn btn-login" onclick="validateLogin()">Login</button>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+          //HAMBURGER MENU
+          const hamburger = document.getElementById("hamburger");
+          const mobileMenu = document.getElementById("mobileMenu");
+          
+          hamburger.addEventListener("click", () => {
+            mobileMenu.style.display = mobileMenu.style.display === "block" ? "none" : "block";
+          });
+
+          //JOB DETAILS
+         const jobDetails= {
+          teacher: `
+          <h2>Alternative Learning Support Teacher</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>
+          
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+            <li>Consectetur adipiscing elit quisque faucibus ex sapien vitae.</li>
+            <li>Ex sapien vitae pellentesque sem placerat in id. </li>
+            <li>Placerat in id cursus mi pretium tellus duis. </li>
+          </ul>
+          <p>Email your résumé to: <strong>recruitment@csa.edu.ph</strong></p>
+          <button class="apply-btn">Apply Now</button> `,
+          
+          marketing: `
+          <h2>Marketing Specialist</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.</p>
+          
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipiscing elit.</li>
+            <li>Consectetur adipiscing elit quisque faucibus ex sapien vitae.</li>
+            <li>Ex sapien vitae pellentesque sem placerat in id. </li>
+            <li>Placerat in id cursus mi pretium tellus duis. </li>
+          </ul>
+          <p>Email your résumé to: <strong>recruitment@svfc.edu.ph</strong></p>
+          <button class="apply-btn">Apply Now</button>`
+         };
+        
+         document.addEventListener('DOMContentLoaded', () => {
+          const cards = document.querySelectorAll('.job-card');
+          const lightbox = document.getElementById('lightbox');
+          const content = document.getElementById('lightbox-content');
+          const closeBtn = document.getElementById('closeBtn');
+          const hamburger = document.querySelector('.hamburger');
+
+           //CHECKING IF IT RESPONSIVE
+           const isResponsive = () => window.innerWidth <= 768;
+           
+           //OPEN LIGHTBOX
+           cards.forEach(card => {
+            card.addEventListener('click', () => {
+              const job = card.getAttribute('data-job');
+              content.innerHTML = jobDetails[job];
+              lightbox.classList.add('active');
+              
+               // HIDES THE HAMBURGER
+              if (isResponsive()) {
+                hamburger.style.display = 'none';
+              }
+            });
+          });
+
+           // CLOSE LIGHTBOX
+          closeBtn.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+            
+            //SHOWING HAMBURGER AGAIN (THIS APPLY FOR RESPONSIVE LAYOUT)
+            if (isResponsive()) {
+              hamburger.style.display = 'block';
+            }
+          });
+          
+          window.addEventListener('resize', () => {
+            if (!isResponsive()) {
+              hamburger.style.display = 'none';
+            } else if (!lightbox.classList.contains('active')) {
+              hamburger.style.display = 'block'; // SHOW HAMBURGER IF LIGHTBOX IS NOT OPEN
+            }
+          });
+          });
+
+         //LOGIN
+           const modal = document.getElementById('loginModal');
+           const loginLink = document.getElementById('loginLink');
+           const loginLinkMobile = document.getElementById('loginLinkMobile');
+           
+           //OPEN MODAL
+           loginLink.onclick = (e) => { 
+            e.preventDefault(); 
+            modal.style.display = 'flex'; 
+           }
+           
+           loginLinkMobile.onclick = (e) => { 
+            e.preventDefault(); 
+            modal.style.display = 'flex'; 
+           }
+           
+           //CLOSE MODAL
+           function closeModal() {
+            modal.style.display = 'none';
+           }
+           
+           //CLOSE WHEN CLICKING OUTSIDE THE MODAL
+           window.onclick = (e) => {
+            if (e.target === modal) closeModal();
+           }
+           
+           // VALIDATE LOGIN FUNCTION
+           function validateLogin() {
+            const username = document.getElementById('username').value.trim();
+            const password = document.getElementById('password').value.trim();
+            
+            if (username === "" && password === "") {
+                alert("Please enter both username and password.");
+        
+            } else if (username === "") {
+                 alert("Please enter your username.");
+        
+            } else if (password === "") {
+                alert("Please enter your password.");
+        
+            } else if (password.length < 8) {
+                 alert("Password must be at least 8 characters long.");
+            
+            } else {
+                alert("Login successful!");
+                closeModal();
+            }
+            }
+        </script>
+  </body>
+</html>
